@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: k8s-demo
-        image: vinaytez/my-python-image
+        image: lakshman345/puthontes
         ports:
         - name: nodejs-port
           containerPort: 3000
