@@ -1,0 +1,5 @@
+kubectl run redispod --image=redis --dry-run=client -o yaml > redis-pod.yml
+
+kubectl expose pod redispod --type=LoadBalancer --name=redis-service --port=7000 --dry-run=client -o yaml > redis-service.yml
+
+kubectl create deployment redis-deployment --image=redis --replicas=3 --port=7000 --dry-run=client -o yaml> redis-deploy.ym
