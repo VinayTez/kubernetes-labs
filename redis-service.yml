@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
   - port: 31001
-    targetPort: nodejs-port
+    targetPort: redis-port
     protocol: TCP
   selector:
     app: redis
