@@ -5,7 +5,7 @@ metadata:
     deployment.kubernetes.io/revision: "1"
   labels:
     app: redis-deployment
-  name: redis-deployment
+  name: redisdeployment
   namespace: default
 spec:
   progressDeadlineSeconds: 600
