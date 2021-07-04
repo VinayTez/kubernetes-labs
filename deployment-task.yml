@@ -4,9 +4,9 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:
-    app: redis-deployment
-    name: redis-deployment
-    namespace: mynamespace
+    app: "redis-deployment"
+    name: "redis-deployment"
+    namespace: "mynamespace"
 spec:
   progressDeadlineSeconds: 600
   replicas: 3
@@ -18,7 +18,7 @@ spec:
     rollingUpdate:
       maxSurge: 100%
       maxUnavailable: 25%
-      type: rollingupdate
+      type: RollingUpdate
   template:
     metadata:
       labels:
